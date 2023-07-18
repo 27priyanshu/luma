@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:luma/home_page.dart';
+import 'package:luma/pallets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Luma',
+      theme: ThemeData.light().copyWith(
+          scaffoldBackgroundColor: Pallete.whiteColor,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Pallete.whiteColor,
+          )),
       home: const HomePage(
         title: '',
       ),
