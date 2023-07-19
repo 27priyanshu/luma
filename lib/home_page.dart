@@ -14,7 +14,9 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text(
           'Luma',
+          style: TextStyle(color: Colors.black),
         ),
+        centerTitle: true,
         leading: const Icon(Icons.menu),
       ),
     );
